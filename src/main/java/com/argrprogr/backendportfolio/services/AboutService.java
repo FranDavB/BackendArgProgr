@@ -29,4 +29,10 @@ public class AboutService implements IAboutService {
     public void saveAbout(About about) {
         abRepo.save(about);
     }
+
+    @Override
+    public About findAbout(Long id) {
+        About about = abRepo.findById(id).orElse(null);
+        return about;
+    }
 }

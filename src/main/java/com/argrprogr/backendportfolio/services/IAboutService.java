@@ -15,6 +15,8 @@ public interface IAboutService {
     
     public List<About> getAbout();
     
+    public About findAbout(Long id);
+    
     public void saveAbout (About about);
         
 }

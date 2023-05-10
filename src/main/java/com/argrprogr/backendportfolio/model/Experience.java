@@ -24,5 +24,6 @@ public class Experience {
     private String name;
     private String logourl;
     private String description;
-    private String date;
+    private String startDate;
+    private String endDate;
 }

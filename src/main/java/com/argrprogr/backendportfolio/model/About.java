@@ -19,10 +19,12 @@ import lombok.Setter;
 @Entity
 public class About {
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE)
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
     private String photourl;
     private String description;
     private String city;
     private String country;
+    private String profession;
+    private String name;
 }
